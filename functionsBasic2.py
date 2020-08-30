@@ -31,7 +31,17 @@ first_plus_length([3425,35,2,134,5,67,34,2,342,5,35,62,4457,45])
 #     Example: values_greater_than_second([5,2,3,2,1,4]) should print 3 and return [5,3,4]
 #     Example: values_greater_than_second([3]) should return False
 
-
+def values_greater_than_second(list):
+    itemsGreaterThanSecond = []
+    if len(list) < 2:
+        return False
+    secondValue = list[1]
+    for i in range(0,len(list)):
+        if list[i] > secondValue:
+            itemsGreaterThanSecond.append(list[i])
+    print(len(itemsGreaterThanSecond))
+    return itemsGreaterThanSecond
+print(values_greater_than_second([3425,35,2,134,5,67,34,2,342,5,35,62,4457,45]))
 # This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value.
 #     Example: length_and_value(4,7) should return [7,7,7,7]
 #     Example: length_and_value(6,2) should return [2,2,2,2,2,2]
