@@ -45,3 +45,9 @@ print(values_greater_than_second([3425,35,2,134,5,67,34,2,342,5,35,62,4457,45]))
 # This Length, That Value - Write a function that accepts two integers as parameters: size and value. The function should create and return a list whose length is equal to the given size, and whose values are all the given value.
 #     Example: length_and_value(4,7) should return [7,7,7,7]
 #     Example: length_and_value(6,2) should return [2,2,2,2,2,2]
+def length_and_value(length, value):
+    output = []
+    for i in range(0,length):
+        output.append(value)
+    return output
+print(length_and_value(4,7))
